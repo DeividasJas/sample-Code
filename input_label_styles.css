@@ -1,0 +1,45 @@
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+    height: 10px;
+    background-color: rgba(167,254,177,255);
+    margin: 20px 0;
+
+  }
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    /* margin-top: -12px; Centers thumb on the track */
+    background-color:darkslategrey;
+    height: 1.5rem;
+    width: 1.5rem;    
+    border-radius: 50%;
+    border: 1px solid rgba(167,254,177,255) ;
+ }
+  
+ input[type="checkbox"]{
+    /* -webkit-appearance: none; */
+    height: 1rem;
+    width: 1rem;
+    accent-color: rgba(167,254,177,255);
+ }
+
+button{
+    height: 3rem;
+    background-color:  rgb(100, 100, 100);
+    border: 2px solid rgba(167,254,177,255);
+    color: rgba(167,254,177,255);
+    font-size: 1.1rem;
+}
+.button_text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+button img{
+    margin-left: 10px;
+}

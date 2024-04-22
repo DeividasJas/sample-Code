@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cssReset.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="input_label_styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <title>Random password generator</title>
+</head>
+
+<body>
+    <main>
+        <!-- SUGENERUOTAS KODAS ------------------------------ -->
+        <h1>Password Generator</h1>
+        <section class="code_window_wrapper">
+            <div class="code_window">
+                <p class="generated_code" id="generated_code">
+                    iafjnhwijefpwioa
+                </p>
+            </div>
+            <div class="copy_code">
+                <img src="images/copy.svg" alt="">
+            </div>
+        </section>
+
+        <!-- KODO KONFIGURACIJOS LANGAS -------------------------- -->
+        <section class="code_generator_wrapper">
+            <form action="">
+                <!-- RANGE SECTION -->
+                <section class="range">
+                    <div class="range_label">
+                        <label for="">Character Length</label>
+                        <span class="range_value">10</span>
+                    </div>
+                    <input type="range" min="1" max="20" value="10" class="slider" id="range">
+                </section>
+
+                <!-- CHECKBOX SECTION -->
+                <section class="checkbox">
+                    <div class="uppercase">
+                        <input type="checkbox" name="uppercase" id="uppercase">
+                        <label for="uppercase">Include Uppercase Letters</label>
+                    </div>
+                    <div class="lowercase">
+                        <input type="checkbox" name="" id="lowercase">
+                        <label for="lowercase">Include Lowercase Letters</label>
+                    </div>
+                    <div class="numbers">
+                        <input type="checkbox" name="" id="numbers">
+                        <label for="numbers">Include Numbers</label>
+                    </div>
+                    <div class="symbols">
+                        <input type="checkbox" name="" id="symbols">
+                        <label for="symbols">Include Symbols</label>
+                    </div>
+                </section>
+
+                <!-- PASSWORD STRENGTH SECTION -->
+                <section class="password_strength">
+                    <p>STRENGTH</p>
+                    <div>STRENGTH LEVEL</div>
+
+                </section>
+
+                <!-- PASSWORD GENERATE BUTTON -->
+                <section class="button_wrapper">
+                    <button type="submit" class="button" id="button">
+                        <span class="button_text">
+                            Generate
+                            <img src="images/arrow-right-short.svg" alt="">
+                        </span>
+                    </button>
+                </section>
+
+            </form>
+        </section>
+    </main>
+</body>
+<script src="script.js"></script>
+
+</html>
